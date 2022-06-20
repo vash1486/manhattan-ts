@@ -1,4 +1,4 @@
-import {Calculator} from "../lib/calculator"
+import {Calculator} from "../src/calculator"
 
 describe('calculator', () => {
   

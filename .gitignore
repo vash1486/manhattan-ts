@@ -2,7 +2,7 @@
 coverage/
 
 # Compiled binary
-build/
+dist/
 
 # Editors
 .idea/
@@ -13,8 +13,3 @@ node_modules/
 
 # Optional eslint cache
 .eslintcache
-
-# dotenv environment variables file
-.env
-.env.test
-

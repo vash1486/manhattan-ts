@@ -1,7 +1,8 @@
-import { Calculator } from "./lib/calculator"
+import { Calculator } from "./calculator"
 import {readFileSync} from "fs"
 
-const instructions: string = readFileSync('./instructions').toString()
+const fileName: string = process.argv[2] ?? './instructions'
+const instructions: string = readFileSync(fileName).toString()
 
 const c: Calculator = new Calculator();
 c.handleInstructions(instructions.split(/\n/));
