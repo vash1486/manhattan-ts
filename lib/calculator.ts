@@ -7,7 +7,7 @@ type Instruction = {
 export class Calculator {
   x = 0
   y = 0
-  direction = 270 // default: est
+  direction = 90 // default: est
 
   moveNorth(units: number): void {
     this.y += units
