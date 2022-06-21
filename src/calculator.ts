@@ -60,7 +60,7 @@ export class Calculator {
       case "S":
         this.moveSouth(splitted.units)
         break
-      case "O":
+      case "W":
         this.moveOvest(splitted.units)
         break
       case "E":
@@ -75,6 +75,8 @@ export class Calculator {
       case "F":
         this.moveForward(splitted.units)
         break
+      default:
+        throw new Error(`Unknown instruction: ${splitted.instruction}`)
     }
   }
 
